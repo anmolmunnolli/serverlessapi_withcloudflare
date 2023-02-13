@@ -1,0 +1,27 @@
+wrangler login // to login into cloudflare from cli
+wrangler generate [name] [template]
+curl -H "Content-type: application/json" -d "{\"query\": \"guitar\"}" http://127.0.0.1:8787
+const {query} = await request.json(); // requesting for incoming query
+fetch api allows to make requests to other websites API
+fetch returns a promise so use, const resp= await fetch()
+wrangler secret put CLIENT_ID
+
+search query using 
+
+
+const {query} = await request.json();
+
+  const resp= await fetch(`https://api.unsplash.com/search/photos?query=${query}`, {
+
+  headers: {
+    Authorization: `Client-ID ${CLIENT_ID }`
+  }
+
+  })
+
+  returns a list of json object results// to search, filter and transform json data
+
+
+  cross origin resource sharing neeeds access control allow origin headers
+
+  
